@@ -12,11 +12,11 @@
 	</head>
 	<body>
 		<div class="max-w-[1612px] px-[15px] mx-auto mt-4">
-			<div class="flex gap-16 items-center text-4 font-bold mb-20">
+			<div class="flex justify-between items-center text-4 font-bold mb-20 md:flex-row flex-col">
 				<div class="w-[241px] h-[54px]">
 					<img class="w-full object-cover" src="./images/logo.png" />
 				</div>
-				<div class="flex items-center w-[560px]">
+				<div class="flex items-center w-[500maxpx]">
 					<div
 						class="py-[6px] px-6 hover:bg-[#FFC43F] rounded-[6px] hover:text-white cursor-pointer"
 					>
@@ -50,7 +50,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid grid-cols-[repeat(5,minmax(auto,303px))] w-full gap-[25px] ">	
+			<div class="grid xl:grid-cols-[repeat(5,minmax(auto,303px))] lg:grid-cols-4 grid-cols-3 w-full gap-[25px] ">	
 				<div class=" h-[405px] rounded-md p-4 w-full border-[#FBFBFB] border shadow-inner hover:shadow-lg  mb-8">					
 					<div class="w-full h-[236px] flex justify-center items-center bg-[#F9F9F9]  relative">
 						<img src="./images/item1.png" class="w-4/5 object-cover" />
@@ -254,26 +254,26 @@
 				</div>	
 			</div>
 			<div>
-				<div class="flex justify-between items-center">
+				<div class="flex justify-between items-center ">
 					<h2 class="text-[#333333] text-[24px] font-semibold">Our latest articles</h2>
 					<p>Read all articles</p>
 				</div>
-				<div class="flex gap-[51px]">
-					<div class="p-[25px] rounded-md shadow-sm w-[503px] flex flex-col">
+				<div class="grid gap-[51px] xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1">
+					<div class="p-[25px] rounded-md shadow-sm  flex flex-col ">
 						<div class="w-full h-[365px] rounded-xl overflow-hidden bg-[#f2f2f2]">
 							<img src="./images/catelog3.png" class="w-full  object-cover rounded-xl" />
 						</div>
 						<h3 class="text-[#333333] text-[24px] font-semibold my-3">Right way to preserve the fruits & other organics</h3>
 						<p class="text-[#747474] text-4">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
 					</div>
-					<div class="p-[25px] rounded-md shadow-sm w-[503px] flex flex-col">
+					<div class="p-[25px] rounded-md shadow-sm  flex flex-col">
 						<div class="w-full h-[365px] rounded-xl overflow-hidden bg-[#f2f2f2]">
 							<img src="./images/catelog1.png" class="w-full  object-cover rounded-xl" />
 						</div>
 						<h3 class="text-[#333333] text-[24px] font-semibold my-3">Right way to preserve the fruits & other organics</h3>
 						<p class="text-[#747474] text-4">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
 					</div>
-					<div class="p-[25px] rounded-md shadow-sm w-[503px] flex flex-col">
+					<div class="p-[25px] rounded-md shadow-sm  flex flex-col">
 						<div class="w-full h-[365px] rounded-xl overflow-hidden bg-[#f2f2f2]">
 							<img src="./images/catelog2.png" class="w-full  object-cover rounded-xl" />
 						</div>

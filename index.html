@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="main.css" />
+
+		<title>Foot Shop</title>
+	</head>
+	<body>
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand text-uppercase" href="#">Foot Shop</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Shop</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Page</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Product</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Service</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact</a>
+							</li>
+						</ul>
+
+						<div class="d-flex gap-3">
+							<form class="d-flex">
+								<input
+									class="form-control me-2"
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+								/>
+								<button class="btn btn-outline-success" type="submit">
+									Search
+								</button>
+							</form>
+							<button
+								class="btn btn-primary"
+								type="submit"
+								data-bs-toggle="modal"
+								data-bs-target="#GFG"
+							>
+								Login
+							</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!------- Product Section -------->
+			<section class="product container">
+				<div class="row">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 card">
+						<div class="card-body product-item">
+							<div class="product-image position-relative shadow">
+								<img src="/images/item1.png" alt="Random Image" />
+								<div
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+								>
+									Add to Cart
+								</div>
+							</div>
+							<div>
+								<h5 class="product-title">Product Gucci duffle bag</h5>
+								<span class="product-price-1 fw-bold">$100</span>
+								<span class="product-price-2 fw-bold">$80</span>
+								<div
+									class="d-flex gap-2 justify-content-start align-items-center product-star"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 card">
+						<div class="card-body product-item">
+							<div class="product-image position-relative shadow">
+								<img src="/images/item2.png" alt="Random Image" />
+								<div
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+								>
+									Add to Cart
+								</div>
+							</div>
+							<div>
+								<h5 class="product-title">Product Gucci duffle bag</h5>
+								<span class="product-price-1 fw-bold">$100</span>
+								<span class="product-price-2 fw-bold">$80</span>
+								<div
+									class="d-flex gap-2 justify-content-start align-items-center product-star"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 card">
+						<div class="card-body product-item">
+							<div class="product-image position-relative shadow">
+								<img src="/images/item3.png" alt="Random Image" />
+								<div
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+								>
+									Add to Cart
+								</div>
+							</div>
+							<div>
+								<h5 class="product-title">Product Gucci duffle bag</h5>
+								<span class="product-price-1 fw-bold">$100</span>
+								<span class="product-price-2 fw-bold">$80</span>
+								<div
+									class="d-flex gap-2 justify-content-start align-items-center product-star"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 card">
+						<div class="card-body product-item">
+							<div class="product-image position-relative shadow">
+								<img src="/images/item4.png" alt="Random Image" />
+								<div
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+								>
+									Add to Cart
+								</div>
+							</div>
+							<div>
+								<h5 class="product-title">Product Gucci duffle bag</h5>
+								<span class="product-price-1 fw-bold">$100</span>
+								<span class="product-price-2 fw-bold">$80</span>
+								<div
+									class="d-flex gap-2 justify-content-start align-items-center product-star"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 card">
+						<div class="card-body product-item">
+							<div class="product-image position-relative shadow">
+								<img src="/images/item5.png" alt="Random Image" />
+								<div
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+								>
+									Add to Cart
+								</div>
+							</div>
+							<div>
+								<h5 class="product-title">Product Gucci duffle bag</h5>
+								<span class="product-price-1 fw-bold">$100</span>
+								<span class="product-price-2 fw-bold">$80</span>
+								<div
+									class="d-flex gap-2 justify-content-start align-items-center product-star"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 card">
+						<div class="card-body product-item">
+							<div class="product-image position-relative shadow">
+								<img src="/images/item6.png" alt="Random Image" />
+								<div
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+								>
+									Add to Cart
+								</div>
+							</div>
+							<div>
+								<h5 class="product-title">Product Gucci duffle bag</h5>
+								<span class="product-price-1 fw-bold">$100</span>
+								<span class="product-price-2 fw-bold">$80</span>
+								<div
+									class="d-flex gap-2 justify-content-start align-items-center product-star"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 card">
+						<div class="card-body product-item">
+							<div class="product-image position-relative shadow">
+								<img src="/images/item7.png" alt="Random Image" />
+								<div
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+								>
+									Add to Cart
+								</div>
+							</div>
+							<div>
+								<h5 class="product-title">Product Gucci duffle bag</h5>
+								<span class="product-price-1 fw-bold">$100</span>
+								<span class="product-price-2 fw-bold">$80</span>
+								<div
+									class="d-flex gap-2 justify-content-start align-items-center product-star"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 card">
+						<div class="card-body product-item">
+							<div class="product-image position-relative shadow">
+								<img src="/images/item8.png" alt="Random Image" />
+								<div
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+								>
+									Add to Cart
+								</div>
+							</div>
+							<div>
+								<h5 class="product-title">Product Gucci duffle bag</h5>
+								<span class="product-price-1 fw-bold">$100</span>
+								<span class="product-price-2 fw-bold">$80</span>
+								<div
+									class="d-flex gap-2 justify-content-start align-items-center product-star"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 card">
+						<div class="card-body product-item">
+							<div class="product-image position-relative shadow">
+								<img src="/images/item9.png" alt="Random Image" />
+								<div
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+								>
+									Add to Cart
+								</div>
+							</div>
+							<div>
+								<h5 class="product-title">Product Gucci duffle bag</h5>
+								<span class="product-price-1 fw-bold">$100</span>
+								<span class="product-price-2 fw-bold">$80</span>
+								<div
+									class="d-flex gap-2 justify-content-start align-items-center product-star"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="orange"
+										class="bi bi-star-fill"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-------- Catagory section -------->
+			<section class="catagory container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12 card catagory-item">
+						<div class="card-body">
+							<div class="catagory-image">
+								<img
+									src="https://source.unsplash.com/random"
+									alt="Random Image"
+								/>
+							</div>
+							<div>
+								<h3 class="fw-semibold catagory-title">
+									Right way to preserve the fruits & other organics
+								</h3>
+								<p class="catagory-text">
+									Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet
+									eleifend viverra enim tincidunt donec quam. A in arcu,
+									hendrerit neque dolor morbi...
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12 card catagory-item">
+						<div class="card-body">
+							<div class="catagory-image">
+								<img
+									src="https://source.unsplash.com/random"
+									alt="Random Image"
+								/>
+							</div>
+							<div>
+								<h3 class="fw-semibold catagory-title">
+									Right way to preserve the fruits & other organics
+								</h3>
+								<p class="catagory-text">
+									Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet
+									eleifend viverra enim tincidunt donec quam. A in arcu,
+									hendrerit neque dolor morbi...
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12 card catagory-item">
+						<div class="card-body">
+							<div class="catagory-image">
+								<img
+									src="https://source.unsplash.com/random"
+									alt="Random Image"
+								/>
+							</div>
+							<div>
+								<h3 class="fw-semibold catagory-title">
+									Right way to preserve the fruits & other organics
+								</h3>
+								<p class="catagory-text">
+									Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet
+									eleifend viverra enim tincidunt donec quam. A in arcu,
+									hendrerit neque dolor morbi...
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="bg-dark text-white text-center p-3">
+				<p>© 2024 Foot Shop. All Rights Reserved.</p>
+			</footer>
+
+			<!------ Option message ----->
+
+			<div class="icon-message shadow">
+				<div class="layer"></div>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="30"
+					height="30"
+					fill="white"
+					class="bi bi-chat-heart-fill"
+					viewBox="0 0 16 16"
+				>
+					<path
+						d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15m0-9.007c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+					/>
+				</svg>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+	</body>
+</html>

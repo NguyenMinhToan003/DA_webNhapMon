@@ -3,7 +3,16 @@
   margin:0;
   box-sizing:border-box;
 }
-
+.navbar{
+  border-bottom: 1px solid #e0e0e0;
+}
+.navbar .navbar-brand{
+  font-size: 24px;
+  font-weight: 500;
+}
+.navbar .nav-item{
+  padding: 0 10px;
+}
 .product{
   margin-top: 100px;
 
@@ -130,4 +139,9 @@
   .product-image{
     height: 400px;
   }
+}
+.active{
+  border-bottom: 3px solid black; 
+  color: black;
+  font-weight: bold;
 }

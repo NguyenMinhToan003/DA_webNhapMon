@@ -1,28 +1,33 @@
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.navbar{
+
+/* Navbar */
+.navbar {
   border-bottom: 1px solid #e0e0e0;
 }
-.navbar .navbar-brand{
+.navbar-brand {
   font-size: 24px;
   font-weight: 500;
 }
-.navbar .nav-item{
+.nav-item {
   padding: 0 10px;
 }
-.product{
-  margin-top: 100px;
-
+.card{
+  border: none;
 }
-.product-item{
+/* Product */
+.product {
+  margin-top: 100px;
+}
+.product-item {
   min-height: 350px;
   margin-top: 30px;
- 
 }
-.product-image{
+.product-image {
   height: 250px;
   width: 100%;
   background-color: #f5f5f5;
@@ -30,46 +35,41 @@
   align-items: center;
   justify-content: center;
 }
-.product-image img{
+.product-image img {
   width: 60%;
   max-height: 70%;
   object-fit: fill;
   border-radius: 4px;
 }
-.product-add-cart{
+.product-add-cart {
   background-color: rgba(0, 0, 0, 0.836);
   padding: 11px;
   border-radius: 0 0 4px 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
 }
-.product-title{
+.product-title {
   font-size: 20px;
   font-weight: 500;
-  margin:16px 0 8px 0 ;
-  
-
+  margin: 16px 0 8px 0;
 }
-.product-price-1{
-  color:#db4444;
+.product-price-1 {
+  color: #db4444;
 }
-.product-price-2{
-  color:#898989;
+.product-price-2 {
+  color: #898989;
   text-decoration: line-through;
 }
-.product-star{
+.product-star {
   margin-top: 8px;
 }
 
-.catagory-item{
-
-  margin: 30px 0 30px 0;
-  height: 300px;
-}
-.card{
-  border: none;
-}
-.catagory-item{
+/* Category */
+.catagory-item {
+  margin: 30px 0;
+  height: 676px; 
   border-radius: 4px;
-  height: 676px;
   padding: 10px;
 }
 .catagory-image {
@@ -80,68 +80,105 @@
   align-items: center;
   justify-content: center;
 }
-.catagory-image img{
+.catagory-image img {
   width: 100%;
   height: 100%;
   object-fit: fill;
   border-radius: 4px;
 }
-.catagory-title{
+.catagory-title {
   font-size: 24px;
   line-height: 1.77;
   color: #222222;
 }
-.catagory-text{
+.catagory-text {
   font-size: 16px;
   line-height: 2.21;
-  letter-spacing: 2;
+  letter-spacing: 2px;
   color: #898989;
 }
-.icon-message{
+
+/* Message Icon */
+.icon-message {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  background-color:black;
+  background-color: black;
   width: 60px;
   height: 60px;
-  border-radius: 100rem;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
-
+  cursor: pointer;
 }
-.icon-message .layer{
+.icon-message .layer {
   z-index: -1;
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  border-radius: 100rem;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation-name: color-change;
-  animation-duration: 4s ;
-  animation-iteration-count: infinite;
-  
+  animation: color-change 3s infinite;
+}
+.icon-message i {
+  color: white;
+  font-size: 25px;
+}
+.icon-message span {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-0%, -50%);
+  color: white;
+  font-size: 15px;
+  background-color: #535353;
+  transition: all 1s ease-in-out;
+  padding: 16px;
+  border-radius: 100rem;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  height: 60px;
+  z-index: -1000;
+}
+.icon-message:hover span {
+  visibility: visible;
+  opacity: 1;
+  padding: 16px 100px 16px 20px;
 }
 
-@keyframes color-change {
-  0% { background-color: rgba(0, 0, 0, 0.804);width: 0;height:0; }
-  100% { background-color: rgba(0, 0, 0, 0);width:110px;height: 110px; }
-  
-}
-@media only screen and (max-width: 965px){
-  .product-item{
+/* Media Query */
+@media only screen and (max-width: 965px) {
+  .product-item {
     min-height: 600px;
   }
-  .product-image{
+  .product-image {
     height: 400px;
   }
 }
-.active{
-  border-bottom: 3px solid black; 
+
+/* Active Class */
+.active {
+  border-bottom: 3px solid black;
   color: black;
   font-weight: bold;
+}
+
+/* Animation */
+@keyframes color-change {
+  0% {
+    background-color: rgba(0, 0, 0, 0.804);
+    width: 0;
+    height: 0;
+  }
+  80% {
+    background-color: rgba(0, 0, 0, 0);
+    width: 110px;
+    height: 110px;
+  }
 }

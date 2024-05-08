@@ -13,17 +13,29 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="main.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
 
 		<title>Foot Shop</title>
 	</head>
 	<body>
 		<div>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow"
+			>
 				<div class="container-fluid">
-					<a class="navbar-brand text-uppercas fw-bold " href="#"><span class="bg-dark text-white p-1">Foot</span><span class="bg-white text-black p-1">Shop</span></a>
+					<a class="navbar-brand text-uppercas fw-bold" href="#"
+						><span class="bg-dark text-white p-1">Foot</span
+						><span class="bg-white text-black p-1">Shop</span></a
+					>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -53,10 +65,7 @@
 								<a class="nav-link" href="#blog">Blog</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link " href="#">Service</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Contact</a>
+								<a class="nav-link" href="#">Cart</a>
 							</li>
 						</ul>
 
@@ -71,10 +80,7 @@
 								<button class="btn btn-outline-dark" type="submit">
 									Search
 								</button>
-								<a
-									class="btn btn-dark"
-									href="/login.html"	
-								>
+								<a class="btn btn-dark" href="/login.html">
 									Login
 								</a>
 							</form>
@@ -91,9 +97,10 @@
 							<div class="product-image position-relative shadow">
 								<img src="/images/item1.png" alt="Random Image" />
 								<div
-									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white shadow d-flex justify-content-center align-items-center gap-2"
 								>
-									Add to Cart
+									<i class="bi bi-cart-plus"></i
+									><span class="fw-bold">add to cart</span>
 								</div>
 							</div>
 							<div>
@@ -103,66 +110,11 @@
 								<div
 									class="d-flex gap-2 justify-content-start align-items-center product-star"
 								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
 								</div>
 							</div>
 						</div>
@@ -172,9 +124,10 @@
 							<div class="product-image position-relative shadow">
 								<img src="/images/item2.png" alt="Random Image" />
 								<div
-									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white shadow d-flex justify-content-center align-items-center gap-2"
 								>
-									Add to Cart
+									<i class="bi bi-cart-plus"></i
+									><span class="fw-bold">add to cart</span>
 								</div>
 							</div>
 							<div>
@@ -184,66 +137,11 @@
 								<div
 									class="d-flex gap-2 justify-content-start align-items-center product-star"
 								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
 								</div>
 							</div>
 						</div>
@@ -253,9 +151,10 @@
 							<div class="product-image position-relative shadow">
 								<img src="/images/item3.png" alt="Random Image" />
 								<div
-									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white shadow d-flex justify-content-center align-items-center gap-2"
 								>
-									Add to Cart
+									<i class="bi bi-cart-plus"></i
+									><span class="fw-bold">add to cart</span>
 								</div>
 							</div>
 							<div>
@@ -265,66 +164,11 @@
 								<div
 									class="d-flex gap-2 justify-content-start align-items-center product-star"
 								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
 								</div>
 							</div>
 						</div>
@@ -334,9 +178,10 @@
 							<div class="product-image position-relative shadow">
 								<img src="/images/item4.png" alt="Random Image" />
 								<div
-									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white shadow d-flex justify-content-center align-items-center gap-2"
 								>
-									Add to Cart
+									<i class="bi bi-cart-plus"></i
+									><span class="fw-bold">add to cart</span>
 								</div>
 							</div>
 							<div>
@@ -346,66 +191,11 @@
 								<div
 									class="d-flex gap-2 justify-content-start align-items-center product-star"
 								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
 								</div>
 							</div>
 						</div>
@@ -415,9 +205,10 @@
 							<div class="product-image position-relative shadow">
 								<img src="/images/item5.png" alt="Random Image" />
 								<div
-									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white shadow d-flex justify-content-center align-items-center gap-2"
 								>
-									Add to Cart
+									<i class="bi bi-cart-plus"></i
+									><span class="fw-bold">add to cart</span>
 								</div>
 							</div>
 							<div>
@@ -427,66 +218,11 @@
 								<div
 									class="d-flex gap-2 justify-content-start align-items-center product-star"
 								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
 								</div>
 							</div>
 						</div>
@@ -496,9 +232,10 @@
 							<div class="product-image position-relative shadow">
 								<img src="/images/item6.png" alt="Random Image" />
 								<div
-									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white shadow d-flex justify-content-center align-items-center gap-2"
 								>
-									Add to Cart
+									<i class="bi bi-cart-plus"></i
+									><span class="fw-bold">add to cart</span>
 								</div>
 							</div>
 							<div>
@@ -508,66 +245,11 @@
 								<div
 									class="d-flex gap-2 justify-content-start align-items-center product-star"
 								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
 								</div>
 							</div>
 						</div>
@@ -577,9 +259,10 @@
 							<div class="product-image position-relative shadow">
 								<img src="/images/item7.png" alt="Random Image" />
 								<div
-									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white shadow d-flex justify-content-center align-items-center gap-2"
 								>
-									Add to Cart
+									<i class="bi bi-cart-plus"></i
+									><span class="fw-bold">add to cart</span>
 								</div>
 							</div>
 							<div>
@@ -589,66 +272,11 @@
 								<div
 									class="d-flex gap-2 justify-content-start align-items-center product-star"
 								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
 								</div>
 							</div>
 						</div>
@@ -658,9 +286,10 @@
 							<div class="product-image position-relative shadow">
 								<img src="/images/item8.png" alt="Random Image" />
 								<div
-									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white shadow d-flex justify-content-center align-items-center gap-2"
 								>
-									Add to Cart
+									<i class="bi bi-cart-plus"></i
+									><span class="fw-bold">add to cart</span>
 								</div>
 							</div>
 							<div>
@@ -670,66 +299,11 @@
 								<div
 									class="d-flex gap-2 justify-content-start align-items-center product-star"
 								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
 								</div>
 							</div>
 						</div>
@@ -739,9 +313,10 @@
 							<div class="product-image position-relative shadow">
 								<img src="/images/item9.png" alt="Random Image" />
 								<div
-									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white cursor-pointer"
+									class="product-add-cart text-center fw-bold position-absolute bottom-0 w-100 text-white shadow d-flex justify-content-center align-items-center gap-2"
 								>
-									Add to Cart
+									<i class="bi bi-cart-plus"></i
+									><span class="fw-bold">add to cart</span>
 								</div>
 							</div>
 							<div>
@@ -751,66 +326,11 @@
 								<div
 									class="d-flex gap-2 justify-content-start align-items-center product-star"
 								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="orange"
-										class="bi bi-star-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-										/>
-									</svg>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
+									<i class="bi bi-star-fill text-warning"></i>
 								</div>
 							</div>
 						</div>
@@ -890,68 +410,8 @@
 
 			<div class="icon-message shadow">
 				<div class="layer"></div>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="30"
-					height="30"
-					fill="white"
-					class="bi bi-chat-heart-fill"
-					viewBox="0 0 16 16"
-				>
-					<path
-						d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15m0-9.007c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
-					/>
-				</svg>
-			</div>
-
-			<!------ modal login ----->
-
-			<div class="modal fade" id="modalLogin">
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="model-header">
-							<div class="modal-title">welcome to <span class="text-primary">FootShop</span></div>
-							<button
-								type="button"
-								class="btn-close"
-								data-bs-dismiss="modal"
-							></button>
-						</div>
-						<div class="model-body">
-							<form action="">
-								<div class="mb-3">
-									<label for="email" class="form-label">Email address</label>
-									<input
-										type="email"
-										class="form-control"
-										id="email"
-										aria-describedby="emailHelp"
-									/>
-									<div id="emailHelp" class="form-text">
-										We'll never share your email with anyone else.
-									</div>
-								</div>
-								<div class="mb-3">
-									<label for="password" class="form-label">Password</label>
-									<input type="password" class="form-control" id="password" />
-								</div>
-								<div class="mb-3 form-check">
-									<input type="checkbox" class="form-check-input" id="check" />
-									<label class="form-check-label" for="check"
-										>Check me out</label
-									>
-								</div>
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</form>
-						</div>
-						<div class="model-footer">
-							<p>Don't have an account? <a href="#">Sign up</a></p>
-							<button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
-								Close
-								</button>	
-								<button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Login</button>
-					</div>
-				</div>
+				<i class="bi bi-chat-heart-fill"></i>
+				<span class="shadow">Message</span>
 			</div>
 		</div>
 

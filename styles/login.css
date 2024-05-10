@@ -37,3 +37,9 @@ body{
   border: 0.6 #282828 solid;
   margin-bottom: 30px;
 }
+.error-message{
+  color: #dc3545;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 700;
+}

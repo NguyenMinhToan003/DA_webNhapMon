@@ -8,7 +8,8 @@ $('#submit').click(function (event) {
 	let validateEmail = true;
 	let validatePhone = true;
 	let validate = true;
-
+	let rexgeEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	let rexphone = /^[0-9]{10}$/;
 	event.preventDefault();
 	if (username === '') {
 		$('input[name="username"]').css('border', '2px solid #ca6510');
@@ -28,7 +29,7 @@ $('#submit').click(function (event) {
 		$('.errpassword').text('');
 		validatePass = true;
 	}
-	if (email === '') {
+	if (rexgeEmail.test(email) === false) {
 		$('input[name="email"]').css('border', '2px solid #ca6510');
 		$('.erremail').text('Email is required');
 		validateEmail = false;
@@ -37,7 +38,7 @@ $('#submit').click(function (event) {
 		$('.erremail').text('');
 		validatePhone = true;
 	}
-	if (phone === '') {
+	if (rexphone.test(phone) === false) {
 		$('input[name="numberphone"]').css('border', '2px solid #ca6510');
 		$('.errphone').text('Phone is required');
 		validateEmail = false;

@@ -48,6 +48,8 @@ $('#submit').click(function (event) {
 	}
 	validate = validateName && validatePass && validateEmail && validatePhone;
 	if (validate) {
-		redirec;
+		window.location.href = '../index.html';
+	} else {
+		alert('Please fill in the form');
 	}
 });

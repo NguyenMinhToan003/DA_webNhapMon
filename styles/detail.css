@@ -1,0 +1,61 @@
+.detail {
+  margin-top: 100px;
+}
+.title{
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+.size{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.size p{
+  font-size: 16px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #808080;
+  color:#808080;
+  cursor: pointer;
+}
+.size p.active{
+  border: 2px solid black;
+  color: black;
+}
+.size p:hover{
+  background-color: black;
+  color:wheat;
+}
+.price {
+  font-size: 48px;
+}
+.image{
+  min-height: 490px;
+  max-height: 600px;
+  background-color: #f5f5f5;
+}
+
+.count-views{
+  font-size: 18px;
+  font-weight: 400;
+}
+.count-view span{
+  color:#382274;
+}
+.description{
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+.star{
+  font-size: 40px;
+  gap:20px;
+}
+.title-select {
+  font-size: 24px;
+  font-weight: bold;
+}

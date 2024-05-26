@@ -87,9 +87,8 @@
   padding: 10px;
 }
 .catagory-image {
-  height: 365px;
+  max-height: 365px;
   width: 100%;
-  background-color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +96,7 @@
 .catagory-image img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: scale-down;
   border-radius: 4px;
 }
 .catagory-title {
@@ -230,9 +229,6 @@
   }
   .product-image {
     height: 400px;
-  }
-  .catagory-image img{
-    object-fit: cover;
   }
 }
 a {

@@ -1,56 +1,67 @@
 $('#submit').click(function (event) {
-	let username = $('input[name="username"]').val();
-	let password = $('input[name="password"]').val();
-	let email = $('input[name="email"]').val();
-	let phone = $('input[name="numberphone"]').val();
-	let validateName = true;
-	let validatePass = true;
-	let validateEmail = true;
-	let validatePhone = true;
-	let validate = true;
-	let rexgeEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-	let rexphone = /^[0-9]{10}$/;
 	event.preventDefault();
-	if (username === '') {
-		$('input[name="username"]').css('border', '2px solid #ca6510');
-		$('.errorname').text('name is empty');
-		validateName = false;
+	const name = $('input[name = "name"]').val();
+	const email = $('input[name = "email"]').val();
+	const password = $('input[name = "password"]').val();
+	const phone = $('input[name = "phone"]').val();
+	let check = {
+		name: false,
+		email: false,
+		password: false,
+		phone: false,
+	};
+	const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+	const regexPhone = /^[0-9]{10}$/;
+	if (name.length < 3) {
+		$('label[for="name"]').css('color', 'red');
+		$('label[for="name"]').text('Họ và tên không hợp lệ');
+		$('input[name="name"]').css('border', '1px solid #ca6510');
+		check.name = false;
 	} else {
-		$('input[name="username"]').css('border', '2px solid #0f5132');
-		$('.errorname').text('');
-		validateName = true;
+		$('label[for="name"]').css('color', 'green');
+		$('label[for="name"]').text('Họ và tên hợp lệ');
+		$('input[name="name"]').css('border', '1px solid #000');
+		check.name = true;
 	}
-	if (password === '') {
-		$('input[name="password"]').css('border', '2px solid #ca6510');
-		$('.errpassword').text('min lenght is 6 characters');
-		validatePass = false;
+	if (regexEmail.test(email) === false) {
+		$('label[for="email"]').css('color', 'red');
+		$('label[for="email"]').text('Email không hợp lệ');
+		$('input[name="email"]').css('border', '1px solid #ca6510');
+		check.email = false;
 	} else {
-		$('input[name="password"]').css('border', '2px solid #0f5132');
-		$('.errpassword').text('');
-		validatePass = true;
+		$('label[for="email"]').css('color', 'green');
+		$('label[for="email"]').text('Email hợp lệ');
+		$('input[name="email"]').css('border', '1px solid #000');
+		check.email = true;
 	}
-	if (rexgeEmail.test(email) === false) {
-		$('input[name="email"]').css('border', '2px solid #ca6510');
-		$('.erremail').text('Email is required');
-		validateEmail = false;
+	if (password.length < 3) {
+		$('label[for="password"]').css('color', 'red');
+		$('label[for="password"]').text('Mật khẩu không hợp lệ');
+		$('input[name="password"]').css('border', '1px solid #ca6510');
+		check.password = false;
 	} else {
-		$('input[name="email"]').css('border', '2px solid #0f5132');
-		$('.erremail').text('');
-		validatePhone = true;
+		$('label[for="password"]').css('color', 'green');
+		$('label[for="password"]').text('Mật khẩu hợp lệ');
+		$('input[name="password"]').css('border', '1px solid #000');
+		check.password = true;
 	}
-	if (rexphone.test(phone) === false) {
-		$('input[name="numberphone"]').css('border', '2px solid #ca6510');
-		$('.errphone').text('Phone is required');
-		validateEmail = false;
+	if (regexPhone.test(phone) === false) {
+		$('label[for="phone"]').css('color', 'red');
+		$('label[for="phone"]').text('Số điện thoại không hợp lệ');
+		$('input[name="phone"]').css('border', '1px solid #ca6510');
+		check.phone = false;
 	} else {
-		$('input[name="numberphone"]').css('border', '2px solid #0f5132');
-		$('.errphone').text('');
-		validatePhone = true;
+		$('label[for="phone"]').css('color', 'green');
+		$('label[for="phone"]').text('Số điện thoại hợp lệ');
+		$('input[name="phone"]').css('border', '1px solid #000');
+		check.phone = true;
 	}
-	validate = validateName && validatePass && validateEmail && validatePhone;
-	if (validate) {
+	if (
+		check.name === true &&
+		check.email === true &&
+		check.password === true &&
+		check.phone === true
+	) {
 		window.location.href = '../index.html';
-	} else {
-		alert('Please fill in the form');
 	}
 });

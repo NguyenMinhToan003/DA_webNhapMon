@@ -1,88 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<!-- Bootstrap CSS -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="wnameth=device-wnameth, initial-scale=1.0" />
+		<title>Thong tin lien he & đặt hàng</title>
 		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="/styles/login.css" />
-		<title>Contact</title>
+		<link rel="stylesheet" href="/styles/dangky.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
 	</head>
 	<body>
-		<div class="login container mx-auto row flex align-items-center mt-5">
-			<form class="col-xl-6 col-lg-7 col-12 form shadow" id="form">
-				<h3>Welcome !</h3>
-				<h1 class="title">Contact us</h1>
-				<p>Lorem Ipsum is simply</p>
-				<div class="mt-5">
-					<label for="username" class="form-label">Username</label>
-					<span class="error-message errorname"></span>
+		<div class="text-center">
+			<div class="title">Contact Us</div>
+			<p class="title-message">
+				Any question or remarks? Just write us a message!
+			</p>
+		</div>
+		<div
+			class="d-flex flex-xl-row flex-column-reverse main mx-auto shadow align-items-start"
+		>
+			<div class="left mx-auto">
+				<div>
+					<h3>Thông tin liên hệ</h3>
+					<p>Say something to start a live chat!</p>
+				</div>
+				<div class="d-flex flex-column align-items-start gap-4 contact-left">
+					<div>
+						<i class="bi bi-telephone-fill"></i><span>+1012 3456 789</span>
+					</div>
+					<div><i class="bi bi-envelope"></i><span>demo@gmail.com</span></div>
+					<div>
+						<i class="bi bi-geo-alt-fill"></i
+						><span
+							>132 Dartmouth Street Boston, Massachusetts 02156 United
+							States</span
+						>
+					</div>
+				</div>
+				<div class="contact-left-bot">
+					<div><i class="bi bi-facebook"></i></div>
+					<div><i class="bi bi-twitter"></i></div>
+					<div><i class="bi bi-google"></i></div>
+				</div>
+			</div>
+			<form class="row right">
+				<div class="mb-3 col-lg-6 col-12">
+					<label for="name" class="form-label>">Họ và tên</label>
 					<input
 						type="text"
-						id="username"
-						placeholder="name..."
-						class="form-control"
-						name="username"
+						class="d-block w-100"
+						name="name"
+						aria-describedby="nameHelp"
 					/>
 				</div>
-				<div>
-					<label for="password" class="form-label">Password</label>
-					<span class="error-message errpassword"></span>
+				<div class="mb-3 col-lg-6 col-12">
+					<label for="phone" class="form-label>">Số điện thoại</label>
 					<input
-						type="password"
-						id="password"
-						placeholder="password..."
-						class="form-control"
-						name="password"
+						type="phone	"
+						class="d-block w-100"
+						name="phone"
+						aria-describedby="phone	Help"
 					/>
 				</div>
-				<div>
-					<label for="email" class="form-label">Email</label>
-					<span class="error-message erremail"></span>
+				<div class="mb-3 col-lg-6 col-12">
+					<label for="email" class="form-label>">Email</label>
 					<input
 						type="email"
-						id="email"
-						placeholder="example@gmail.com"
-						class="form-control"
+						class="d-block w-100"
 						name="email"
+						aria-describedby="emailHelp"
 					/>
 				</div>
-				<div>
-					<label for="numberphone" class="form-label">Phone number</label>
-					<span class="error-message errphone"></span>
+				<div class="mb-3 col-lg-6 col-12">
+					<label for="password" class="form-label>">Mật khẩu</label>
 					<input
-						type="phone"
-						id="numberphone"
-						placeholder="phone number ..."
-						class="form-control"
-						name="numberphone"
+						type="password"
+						class="d-block w-100"
+						name="password"
+						aria-describedby="passwordHelp"
 					/>
 				</div>
-				<button
-					type="buton"
-					class="btn w-100 btn-submit text-uppercase"
-					id="submit"
-				>
-					visit
-				</button>
+				<div class="mb-3 col-12">
+					<textarea placeholder="Write your message.." class="w-100"></textarea>
+				</div>
+				<div class="d-flex justify-content-end gap-4">
+					<button type="submit" class="button" name="submit" id="submit">
+						Gửi Tin Nhắn
+					</button>
+					<a
+						href="../index.html"
+						type="submit"
+						class="button btn btn-danger"
+						name="submit"
+						id="submit"
+					>
+						Quay lại
+					</a>
+				</div>
 			</form>
-			<div class="col-xl-6 col-lg-5 col-0">
-				<img class="w-100 h-100 object-fit-fill" src="../images/login.png" />
-			</div>
 		</div>
-
-		<!-- jQuery -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<!-- Custom JavaScript -->
 		<script src="../scripts/validateform.js"></script>
 	</body>
 </html>

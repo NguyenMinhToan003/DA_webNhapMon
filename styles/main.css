@@ -20,8 +20,8 @@
   border: none;
 }
 /* Product */
-.product {
-  margin-top: 100px;
+body{
+  padding-top:50px ;
 }
 .product-item {
   min-height: 350px;
@@ -82,6 +82,7 @@
 iframe{
   width: 100%;
 }
+
 /* Category */
 .catagory-item {
   margin: 30px 0;
@@ -112,12 +113,18 @@ iframe{
   line-height: 2.21;
   letter-spacing: 2px;
   color: #898989;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;  /* Số dòng giới hạn */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 /* Message Icon */
 .icon-message {
   position: fixed;
-  bottom: 10%;
+  bottom: 15%;
   right: 30px;
   background-color: black;
   width: 60px;
@@ -178,6 +185,17 @@ iframe{
   border-bottom: 3px solid black;
   color: black;
   font-weight: bold;
+}
+.lendautrang{
+  position: fixed;
+  bottom: 7%;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background: white;
+  padding: 10px 15px;
 }
 
 /* Animation */

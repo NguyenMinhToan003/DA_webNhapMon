@@ -24,7 +24,7 @@ body{
   width: 490px;
   padding: 40px;
   border-radius: 6px;
-  color:rgba(255, 255, 255, 0.808);
+  color:#8D8D8D;
   background-color: black;
 }
 .right{
@@ -80,7 +80,19 @@ input:focus,textarea:focus{
   transition: all 0.3s ease-in;
 }
 .contact-left div:hover{
+  color:wheat;
+}
+.contact-left div i{
+  padding: 5px 8px;
+  border-radius: 100rem;
   color:white;
+  background-color: black;  
+  transition: 0.3s;
+}
+.contact-left div:hover i{
+  color:black;
+  background-color: white;
+
 }
 
 .contact-left-bot {
@@ -97,7 +109,7 @@ input:focus,textarea:focus{
  
 }
 .contact-left-bot div i {
-  font-size: 20px;
+  font-size: 25px;
   opacity: 0.5;
   transition: 0.3s;
   cursor: pointer;
@@ -106,4 +118,5 @@ input:focus,textarea:focus{
 .contact-left-bot div i:hover {
   opacity: 1;
   color:white;
+  transform: scale(1.2);
 }
